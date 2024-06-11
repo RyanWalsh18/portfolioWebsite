@@ -15,7 +15,7 @@ align-items: center;
 padding-left: 150px;
 }
 
-.navbar .leftSide img {
+.navbar .leftSide h1 {
 width: 70px;
 }
 
@@ -47,11 +47,11 @@ font-size: 40px;
 .navbar #open {
 padding-left: 0px;
 }
-.navbar #open img {
+.navbar #open h1 {
 display: none;
 }
 
-.navbar #close img {
+.navbar #close h1 {
 display: inherit;
 }
 
