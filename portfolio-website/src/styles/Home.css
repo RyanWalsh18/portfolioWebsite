@@ -70,6 +70,7 @@
       flex-direction: column;
       background-color: #121619;
       color: white;
+      opacity: 90%;
     }
   
     .headerContainer h1 {
@@ -79,7 +80,7 @@
     }
   
     .headerContainer p {
-      font-size: 25px;
+      font-size: 20px;
       color: white;
       text-align: center;
       padding:0;
