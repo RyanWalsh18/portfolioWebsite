@@ -5,7 +5,7 @@ import '../styles/Projects.css';
 
 function Projects() {
   return (
-    <div className='projects'>
+    <div className='projects' >
         <h1 className='pageTitle'>My Projects</h1>
         <div className='projectsList'>
             {ProjectList.map((project, key)=>{
