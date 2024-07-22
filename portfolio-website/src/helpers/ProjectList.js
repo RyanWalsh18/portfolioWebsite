@@ -38,7 +38,7 @@ export const ProjectList = [
         id:4,
         name: "Web Crawler",
         image: Crawler,
-        description:['Designed and implemented a web crawler and search tool.','The web crawler starts at a base URL and constructs an inverted index based on the scraped information, which can be queried by users','The crawler is designed to use a recurisive strategy to navigate web pages and update and inverted index that store scrapied information','Users are able to use a search tool which ranks results based on relevance using multiple factors such as term frequency and proximity','This project was developed using Python and employed libraries like "requests", "BeautifulSoup" and "nltk"'],
+        description:['Designed and implemented a web crawler and search tool.','The web crawler starts at a base URL and constructs an inverted index based on the scraped information, which can be queried by users','The crawler is designed to use a recurisive strategy to navigate web pages and update the inverted index that stores scrapied information','Users are able to use a search tool which ranks results based on relevance using multiple factors such as term frequency and proximity','This project was developed using Python and employed libraries like "requests", "BeautifulSoup" and "nltk"'],
         skills: ['Web Crawling', 'Python', 'Data Structures', 'Text Processing', 'Search Algorithms']
     },
     {
@@ -52,7 +52,7 @@ export const ProjectList = [
         id:6,
         name: "AI: Decision Trees",
         image: aiDecisionTrees,
-        description:['Developed Python functions which perform various tasks regarding decision trees and data sets','Designed system to take a "csv" dataset and learn a decision tree from it in order to predict specified values','Calulated the error ratio to evalute the performance of the decision tree','Split data into training and test sets to avoid overfitting','Pruned the trees to eliminate nodes that are unneeded','Used statistical models to determine if tree requires further pruning'],
+        description:['Developed Python functions which perform various tasks regarding decision trees and data sets','Designed system to take a "csv" dataset and learn a decision tree from it in order to predict specified values','Calulated the error ratio to evalute the performance of the decision tree','Split data into training and test sets to avoid overfitting','Pruned the trees to eliminate nodes that are unnecessary','Used statistical models to determine if tree requires further pruning'],
         skills: ['Python','Decision Trees','Pruning','Datasets']
     },
     {
@@ -80,14 +80,14 @@ export const ProjectList = [
         id:10,
         name: "Qt: Media Player",
         image: QTvideoPlayer,
-        description:['Part of a development team that produced a video player and editor using the Qt framework','Primary aim was to create a user friendly and interactive tool','We utilised Agile development cycles to create serveral iterations of minimal viable product','Our final iteration included features such as a responsive mobile UI, video playback, editing capabilities and accessibility features such as brightness/contrast control, colour schemes, full screen and tooltips'],
+        description:['Part of a development team that produced a video player and editor using the Qt framework','Primary aim was to create a user friendly and interactive tool','We utilised Agile development cycles to create several iterations of a minimal viable product','Our final iteration included features such as a responsive mobile UI, video playback, editing capabilities and accessibility features such as brightness/contrast control, colour schemes, full screen and tooltips'],
         skills: ['Qt Framework','C++','UI Design','Video Processing','Agile Development']
     },
     {
         id:11,
         name: "Serverless Computing and FaaS",
         image: WebServices,
-        description:['Created an Azure based solution for managing and analysing sensor data. The system is split into three seperate components','Data Generation Function: An Azure function in Python that generates sensor data and writes it to an Azure SQL database. Function accepts an HTTP request as input and stores the data','Data Retrieval and Analysis Function: Alos implemented as an Azure function, this component reads sensor data from the Azure SQL database and calculates statistics for the data','Realisitic Scenario Implementation: Final component integrates the two previous components into a realistic scenario. The data generation function is triggered by a timer, simulating regular data collection by sensors every minute. The statistics function is triggered by changes in the SQL database, ensuring real-time updates and analysis as new data is inserted'],
+        description:['Created an Azure based solution for managing and analysing sensor data. The system is split into three separate components','Data Generation Function: An Azure function in Python that generates sensor data and writes it to an Azure SQL database. Function accepts an HTTP request as input and stores the data','Data Retrieval and Analysis Function: Also implemented as an Azure function, this component reads sensor data from the Azure SQL database and calculates statistics for the data','Realisitic Scenario Implementation: Final component integrates the two previous components into a realistic scenario. The data generation function is triggered by a timer, simulating regular data collection by sensors every minute. The statistics function is triggered by changes in the SQL database, ensuring real-time updates and analysis as new data is inserted'],
         skills: ['Azure Functions','Azure SQL Database','Python','Serverless Architecture','HTTP Requests and Responses','Data Analysis']
     },
     {
