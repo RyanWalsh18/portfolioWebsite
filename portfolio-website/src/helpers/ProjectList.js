@@ -17,7 +17,7 @@ export const ProjectList = [
         id:1,
         name: "Dissertation",
         image: Dissertation,
-        description: ['My dissertion was an academic research project where I investigated solutions to the N-Body problem', 'These methods were then implemented in software, using C++ and SDL, in order to produce visuals simulation of these different methods','Evaluations of these methods were then carried and, subsequently, improvements were made using techniques such as parallel programming techniques'],
+        description: ['My dissertion was an academic research project where I investigated solutions to the N-Body problem', 'These methods were then implemented in software, using C++ and SDL, in order to produce visual simulations of these different methods','Evaluations of these methods were then carried and, subsequently, improvements were made using techniques such as parallel programming techniques'],
         skills: ['Research','Technical Writing','C++','Parallel Programming','Unit Testing','Integration Testing']
     },
     {
@@ -31,14 +31,14 @@ export const ProjectList = [
         id:3,
         name: "Portfolio Web App",
         image: PortfolioWebsite,
-        description:['Developed a dynamic and responsive portfolio web app using React.','This React app allows me to showcase my software projects in a user friendly way by utilising interactive navigation and responsive design in order to allow for optimal viewing on various devices.','By choosing to use a React application, the app focuses on modularity and resuability through the use of React components to simplifiy development'],
+        description:['Developed a dynamic and responsive portfolio web app using React.','This React app allows me to showcase my software projects in a user friendly way by utilising interactive navigation and responsive design in order to allow for optimal viewing on various devices.','By choosing to use a React application, the app focuses on modularity and reusability through the use of React components to simplifiy development'],
         skills: ['React', 'JavaScript', 'Responsive Design', 'Web Development']
     },
     {
         id:4,
         name: "Web Crawler",
         image: Crawler,
-        description:['Designed and implemented a web crawler and search tool.','The web crawler starts at a base URL and constructs an inverted index based on the scraped information, which can be queried by users','The crawler is designed to use a recurisive strategy to navigate web pages and update the inverted index that stores scrapied information','Users are able to use a search tool which ranks results based on relevance using multiple factors such as term frequency and proximity','This project was developed using Python and employed libraries like "requests", "BeautifulSoup" and "nltk"'],
+        description:['Designed and implemented a web crawler and search tool.','The web crawler starts at a base URL and constructs an inverted index based on the scraped information, which can be queried by users','The crawler is designed to use a recurisive strategy to navigate web pages and update the inverted index that stores scraped information','Users are able to use a search tool which ranks results based on relevance using multiple factors such as term frequency and proximity','This project was developed using Python and employed libraries like "requests", "BeautifulSoup" and "nltk"'],
         skills: ['Web Crawling', 'Python', 'Data Structures', 'Text Processing', 'Search Algorithms']
     },
     {
@@ -73,7 +73,7 @@ export const ProjectList = [
         id:9,
         name: "Data Mining",
         image: DataMining,
-        description:['Collaberated as part of a project to develop a research proposal that involves the use of data mining','Our proposal was titled: "Detecting Social Media Posts Which Contribute to Unconscious Sexism"','Utilised different APIs (such as the "Twitter" API) to obtain a dataset','Used tools such as Sketch Engine and Weka','Compared and contrasted different classifiers to determine which would be best for our data'],
+        description:['Collaborated as part of a project to develop a research proposal that involves the use of data mining','Our proposal was titled: "Detecting Social Media Posts Which Contribute to Unconscious Sexism"','Utilised different APIs (such as the "Twitter" API) to obtain a dataset','Used tools such as Sketch Engine and Weka','Compared and contrasted different classifiers to determine which would be best for our data'],
         skills: ['Weka','Sketch Engine']
     },
     {
