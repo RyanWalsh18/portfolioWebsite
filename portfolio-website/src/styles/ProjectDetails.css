@@ -1,0 +1,80 @@
+.projectDetails {
+    text-align: center;
+  }
+  
+  .projectDetails h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .projectImage {
+    width: 900px;  /* Adjusted width for better centering */
+    height: 450px;  /* Adjusted height for smaller image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;  /* Center the div horizontally and add margin-bottom */
+  }
+  
+  .projectDetails p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .projectDetails h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .projectDetails ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .projectDetails li {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #121619;
+    height: 50px;
+    width: 180px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #333;  /* Slightly lighter color on hover */
+  }
+
+.description{
+    width:80%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+  
+
+@media only screen and (max-width: 1300px) {
+    .projectImage{
+        width: 450px;  /* Adjusted width for better centering */
+        height: 225px;  /* Adjusted height for smaller image */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projectImage{
+        width: 300px;  /* Adjusted width for better centering */
+        height: 200px;  /* Adjusted height for smaller image */
+    }
+}

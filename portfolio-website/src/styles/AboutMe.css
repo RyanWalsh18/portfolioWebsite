@@ -1,0 +1,65 @@
+.aboutMe{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+.pageTitle {
+    font-size: 60px;
+}
+
+
+
+.resultsTable {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #333; /* Changed to a darker color for better readability */
+    text-align: left;
+  }
+  
+  th {
+    text-align: left;
+    background-color: #121619;
+    color: #fff;
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  tbody td {
+    position: relative;
+  }
+  
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    th,
+    td {
+      padding: 10px;
+    }
+  }
