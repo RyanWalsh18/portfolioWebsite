@@ -6,6 +6,7 @@ import Project from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
 import AboutMe from './pages/AboutMe';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         </Routes>
         <Footer> </Footer>
       </Router>
-
+      <Analytics />
     </div>
+
   );
 }
 
