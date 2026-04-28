@@ -13,21 +13,10 @@ function ProjectDetails() {
 
   useEffect(() => {
     api.get(`/project/${id}`)
-      .then((data) => {
-        // The API may return description/skills as a single string or an array.
-        // Normalise both fields to arrays so the JSX can always use .map()
-        const description = Array.isArray(data.description)
-          ? data.description
-          : [data.description];
-        const skills = Array.isArray(data.skills)
-          ? data.skills
-          : [data.skills];
-        setProject({ ...data, description, skills });
-      })
+      .then(setProject)
       // api.js throws on any non-2xx response — catch it here and store the message
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
-
   }, [id]); // Re-fetch whenever the id param changes (user navigates between projects for example)
 
   // Show a spinner while the API call is in flight
@@ -52,19 +41,16 @@ function ProjectDetails() {
       <div className="projectImage" style={{ backgroundImage: `url(${project.imageURL})` }}></div>
 
       <h2>Description</h2>
+      {/* description is a plain text string stored in the database — rendered as a paragraph */}
       <div className='description'>
-        <ul>
-          {/* Each sentence in the description array becomes its own bullet point */}
-          {project.description.map((sentence, index) => (
-            <li key={index}>{sentence}</li>
-          ))}
-        </ul>
+        <p>{project.description}</p>
       </div>
 
       <h2>Skills</h2>
       <div>
         <ul>
-          {project.skills.map((skill, index) => (
+          {/* backend table not setup yet so default to empty array to prevent crash */}
+          {(project.skills ?? []).map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
