@@ -1,7 +1,6 @@
 // ProjectDetails page — fetches a single project by its URL id param and renders its details
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { projectImages } from '../helpers/ProjectList';
 import api from '../services/api';
 import '../styles/ProjectDetails.css';
 
@@ -50,7 +49,7 @@ function ProjectDetails() {
     <div className='projectDetails'>
       <h1>{project.name}</h1>
       {/* Thumbnail uses background-image so CSS can handle sizing and cropping */}
-      <div className="projectImage" style={{ backgroundImage: `url(${projectImages[project.id]})` }}></div>
+      <div className="projectImage" style={{ backgroundImage: `url(${project.imageURL})` }}></div>
 
       <h2>Description</h2>
       <div className='description'>

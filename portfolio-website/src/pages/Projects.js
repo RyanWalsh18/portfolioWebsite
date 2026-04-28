@@ -1,6 +1,5 @@
 // Projects page — fetches the full project list from the API and renders a card grid
 import React, { useState, useEffect } from 'react';
-import { projectImages } from '../helpers/ProjectList';
 import ProjectItem from '../components/ProjectItem';
 import api from '../services/api';
 import '../styles/Projects.css';
@@ -8,12 +7,14 @@ import '../styles/Projects.css';
 function Projects() {
   const [projects, setProjects] = useState([]);  // Array of project objects from the API
   const [loading, setLoading] = useState(true);  // Show a spinner until the fetch resolves
+  const [error, setError] = useState(null);       // Stores the error message if the fetch fails
 
   useEffect(() => {
     // Fetch all projects on mount; the empty dependency array ensures this runs once
     api.get('/project')
       .then(setProjects)
-      .finally(() => setLoading(false));  // Hide spinner regardless of success or error
+      .catch((err) => setError(err.message))      // api.js throws on non-2xx — catch it here
+      .finally(() => setLoading(false));           // Hide spinner regardless of success or error
   }, []);
 
   // Render a placeholder while the API call is in flight
@@ -21,16 +22,20 @@ function Projects() {
     return <div className='projects'><p>Loading...</p></div>;
   }
 
+  if (error) {
+    return <div className='projects'><p>Failed to load projects.</p></div>;
+  }
+
   return (
     <div className='projects'>
       <h1 className='pageTitle'>My Projects</h1>
       <div className='projectsList'>
         {projects.map((project) => (
-          // project.id is used as the React key and to look up the local thumbnail image
+          // imageURL is returned directly by the API — points to public/projectImages/
           <ProjectItem
             key={project.id}
             id={project.id}
-            image={projectImages[project.id]}
+            image={project.imageURL}
             name={project.name}
           />
         ))}
